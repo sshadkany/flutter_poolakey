@@ -68,12 +68,12 @@ android {
             buildConfigField "String", "POOLAKEY_VERSION", '"' + poolakey_version + '"'
         }
     }
-
-    dependencies {
-        implementation "com.github.cafebazaar.Poolakey:poolakey:$poolakey_version"
-    }
     
     buildFeatures {
         buildConfig = true
+    }
+
+    dependencies {
+        implementation "com.github.cafebazaar.Poolakey:poolakey:$poolakey_version"
     }
 }
